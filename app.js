@@ -2068,10 +2068,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const rotatingStatementEl = document.getElementById("hero-rotating-statement");
   if (rotatingStatementEl) {
     const statements = [
-      "I love building clean websites and apps.",
+      "I build websites and apps that are easy to use, secure, and beautiful.",
       "I am passionate about payment security and reliability.",
       "I enjoy designing tactile and interactive user interfaces.",
       "I automate development tasks using smart scripts.",
+      "I love building clean websites and apps.",
       "I mentor young programming students in Abeokuta."
     ];
     let statementIndex = 0;
@@ -2112,7 +2113,7 @@ document.addEventListener("DOMContentLoaded", () => {
       smartteller: {
         title: "SmartTeller Tech",
         role: "Business Technical Officer (BTO) & Lead Engineer",
-        duration: "2023 - PRESENT",
+        duration: "2025 - PRESENT",
         responsibilities: [
           "Direct the migration of the core microfinance billing engines, processing over ₦150M in transactions securely.",
           "Implement database row locking to prevent double-billing errors during payment network drops.",
@@ -2129,7 +2130,7 @@ document.addEventListener("DOMContentLoaded", () => {
       loadedapp: {
         title: "LoadedApp Nig.",
         role: "CTO & Senior Developer",
-        duration: "JAN 2024 - PRESENT",
+        duration: "2024",
         responsibilities: [
           "Scale VTU (Virtual Top-Up) delivery system for instant automated airtime, data, and bill payments.",
           "Implement automatic transaction failovers, switching gateway nodes in under 2 seconds during timeout events.",
@@ -2146,7 +2147,7 @@ document.addEventListener("DOMContentLoaded", () => {
       maxdesign: {
         title: "Max Design & Tech",
         role: "Technical & Creative Lead / Director",
-        duration: "NOV 2022 - PRESENT",
+        duration: "NOV 2022 - 2025",
         responsibilities: [
           "Establish a boutique design and engineering agency, creating bespoke websites and web systems.",
           "Create vectors, visual brand guides, mockups, and layouts in Photoshop, Figma, and CorelDraw.",
@@ -2177,7 +2178,7 @@ document.addEventListener("DOMContentLoaded", () => {
       yemet: {
         title: "Yemet Grafics",
         role: "Graphic Designer",
-        duration: "FEB 2023 - OCT 2023",
+        duration: "SEPT 2021 - OCT 2023",
         responsibilities: [
           "Complete professional graphic design certifications and deliver high-quality commercial assets.",
           "Design corporate logo identities, banners, billboards, and vector templates with strict print grid alignment.",
