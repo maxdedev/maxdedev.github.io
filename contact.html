@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNX79ZP083"></script>
+
+  <script>
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-JNX79ZP083');
+
+  </script>
+
+  <meta charset="UTF-8">
+  <link rel="icon" href="logo.jpg" type="image/jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect with Omobayonle Olubiyi | Full-Stack Architect</title>
+  <meta name="description"
+    content="Get in touch with Omobayonle Olubiyi, Full-Stack Systems Architect & CTO. Build a secure project lead payload or connect on social platforms.">
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accentYellow: 'var(--color-accent-yellow, #fde047)',
+            accentCyan: 'var(--color-accent-cyan, #22d3ee)',
+            accentGreen: 'var(--color-accent-green, #4ade80)',
+            accentPink: 'var(--color-accent-pink, #fb7185)',
+            darkbg: 'var(--color-bg, #faf9f6)',
+            bordercol: 'var(--color-border, #000000)',
+            white: 'var(--color-card-bg, #ffffff)',
+            black: 'var(--color-border, #000000)',
+            zinc: {
+              50: '#f9fafb',
+              100: '#f3f4f6',
+              200: '#e5e7eb',
+              300: '#d1d5db',
+              400: '#9ca3af',
+              500: 'var(--color-text-muted, #6b7280)',
+              600: 'var(--color-text-muted, #4b5563)',
+              650: 'var(--color-text-muted, #4b5563)',
+              700: 'var(--color-text-muted, #374151)',
+              750: 'var(--color-text-muted, #374151)',
+              800: 'var(--color-text-main, #1f2937)',
+              900: 'var(--color-text-main, #111827)',
+              950: '#030712'
+            }
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+            mono: ['Fira Code', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="theme-init.js"></script>
+</head>
+
+<body class="bg-darkbg text-black antialiased">
+
+  <!-- Header -->
+  <header class="w-full bg-white border-b-4 border-black sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-display font-bold text-lg tracking-tight hover:underline">
+        OMOBAYONLE // ARCHITECT
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-mono font-bold">
+        <a href="index.html#projects" class="hover:underline">PROJECTS</a>
+        <a href="about.html" class="hover:underline">ABOUT ME</a>
+        <a href="experience.html" class="hover:underline">EXPERIENCE</a>
+        <a href="contact.html" class="hover:underline text-accentPink underline">CONTACT</a>
+      </nav>
+      <div>
+        <a href="https://wa.me/2348167430278" target="_blank" id="nav-cta-whatsapp"
+          class="px-4 py-2 bg-accentGreen border-3 border-black brutalist-shadow-green brutalist-btn-active text-xs font-mono font-bold transition-all inline-block">
+          WHATSAPP CONNECT
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-12 space-y-12">
+
+    <!-- Hero Title -->
+    <section class="space-y-4">
+      <div class="inline-block px-3 py-1 bg-accentYellow border-3 border-black text-xs font-mono font-bold uppercase">
+        INTEGRATION NODE
+      </div>
+      <h1 class="font-display text-4xl sm:text-5xl font-bold leading-none uppercase">
+        Connect &amp; Integration Channels
+      </h1>
+      <p class="text-zinc-700 font-medium text-base leading-relaxed">
+        Get in touch. Fill out the contact form below or reach out directly on social media.
+      </p>
+    </section>
+
+    <!-- Two-Column Connect Layout -->
+    <section class="grid md:grid-cols-12 gap-8">
+
+      <!-- JSON Form Builder Column (col-span-7) -->
+      <div class="md:col-span-7 space-y-6 min-w-0">
+
+        <div class="bg-white border-3 border-black p-4 sm:p-6 brutalist-card-shadow space-y-4">
+          <h2 class="font-display font-bold text-xl uppercase border-b-2 border-black pb-2 flex items-center gap-2">
+            <i class="fas fa-code-branch text-sm text-accentPink"></i> Get In Touch With Me!
+          </h2>
+          <p class="text-zinc-600 text-xs font-mono">
+            Enter your direct message here and i'll get back to you as soon as possible. You can also connect with me on
+            social media or reach out via email or WhatsApp.
+          </p>
+
+          <form id="lead-form" class="space-y-3 font-mono text-xs" onsubmit="event.preventDefault();">
+            <!-- Name Input -->
+            <div class="space-y-1">
+              <label for="lead-name" class="text-zinc-500 font-bold uppercase block text-[10px]">Your Name</label>
+              <input type="text" id="lead-name" placeholder="Type your name here"
+                class="w-full bg-white border-3 border-black text-xs font-mono font-bold p-2 focus:ring-0" required>
+            </div>
+
+            <!-- Email Input -->
+            <div class="space-y-1">
+              <label for="lead-email" class="text-zinc-500 font-bold uppercase block text-[10px]">Your Email
+                Address</label>
+              <input type="email" id="lead-email" placeholder="Type your email address here"
+                class="w-full bg-white border-3 border-black text-xs font-mono font-bold p-2 focus:ring-0" required>
+            </div>
+
+            <!-- Company Input -->
+            <div class="space-y-1">
+              <label for="lead-company" class="text-zinc-500 font-bold uppercase block text-[10px]">Company /
+                Organization</label>
+              <input type="text" id="lead-company" placeholder="Enter your company or organization name"
+                class="w-full bg-white border-3 border-black text-xs font-mono font-bold p-2 focus:ring-0">
+            </div>
+
+            <!-- Budget Select -->
+            <div class="space-y-1">
+              <label for="lead-budget" class="text-zinc-500 font-bold uppercase block text-[10px]">Purpose of
+                connect</label>
+              <select id="purpose"
+                class="w-full bg-white border-3 border-black text-xs font-mono font-bold p-2 focus:ring-0">
+                <option value="" selected>-- select an option --</option>
+                <option value="Just for fun">Just For Fun</option>
+                <option value="collaboration">Possible Collaboration</option>
+                <option value="freelance project">Freelance Project</option>
+              </select>
+            </div>
+
+            <!-- Scope Input -->
+            <div class="space-y-1">
+              <label for="lead-scope" class="text-zinc-500 font-bold uppercase block text-[10px]">
+                Compose your message
+              </label>
+              <textarea id="lead-scope" rows="3" placeholder="Compose your message in details here..."
+                class="w-full bg-white border-3 border-black text-xs font-mono font-bold p-2 focus:ring-0"></textarea>
+            </div>
+          </form>
+
+          <!-- Live JSON Output Terminal -->
+          <div class="space-y-2">
+            <span class="text-zinc-500 font-bold font-mono uppercase text-[9px] block">Live API Payload
+              Serializer</span>
+            <div class="bg-zinc-950 text-green-400 p-4 border-2 border-black font-mono text-xs rounded overflow-x-auto">
+              <pre id="json-preview">Loading serializer node...</pre>
+            </div>
+          </div>
+
+          <!-- Transmission Nodes Buttons -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <button id="transmit-whatsapp"
+              class="py-3 bg-accentGreen border-3 border-black brutalist-shadow-green brutalist-btn-active font-mono font-bold text-xs uppercase transition-all flex items-center justify-center gap-2">
+              <i class="fab fa-whatsapp text-sm"></i> Transmit via WhatsApp
+            </button>
+            <button id="transmit-email"
+              class="py-3 bg-accentCyan border-3 border-black brutalist-shadow-cyan brutalist-btn-active font-mono font-bold text-xs uppercase transition-all flex items-center justify-center gap-2">
+              <i class="far fa-envelope text-sm"></i> Transmit via Email
+            </button>
+          </div>
+
+          <!-- Status Message Container -->
+          <div id="status-message"
+            class="hidden border-3 border-black p-4 font-mono text-xs font-bold text-black brutalist-card-shadow transition-all duration-300">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Social Mesh Column (col-span-5) -->
+      <div class="md:col-span-5 space-y-6 min-w-0">
+
+        <!-- Social Mesh Grid -->
+        <div class="bg-white border-3 border-black p-4 sm:p-5 brutalist-card-shadow space-y-4">
+          <h3 class="font-display font-bold text-sm uppercase border-b-2 border-black pb-2">Social Mesh Channels</h3>
+
+          <div class="grid grid-cols-1 gap-3 font-mono text-xs">
+
+            <!-- GitHub -->
+            <a href="https://github.com/maxdedev" target="_blank"
+              class="p-3 bg-accentGreen border-2 border-black brutalist-shadow-black brutalist-btn-active flex flex-col sm:flex-row sm:items-center justify-between gap-1 font-bold">
+              <span><i class="fab fa-github text-sm mr-2"></i> GitHub</span>
+              <span class="text-[10px] text-zinc-650 sm:text-right font-medium">github.com/maxdedev</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/maxdedev" target="_blank"
+              class="p-3 bg-accentCyan border-2 border-black brutalist-shadow-black brutalist-btn-active flex flex-col sm:flex-row sm:items-center justify-between gap-1 font-bold">
+              <span><i class="fab fa-linkedin text-sm mr-2"></i> LinkedIn</span>
+              <span class="text-[10px] text-zinc-650 sm:text-right font-medium">in/maxdedev</span>
+            </a>
+
+            <!-- Twitter / X -->
+            <a href="https://twitter.com/maxdedev" target="_blank"
+              class="p-3 bg-accentYellow border-2 border-black brutalist-shadow-black brutalist-btn-active flex flex-col sm:flex-row sm:items-center justify-between gap-1 font-bold">
+              <span><i class="fab fa-twitter text-sm mr-2"></i> Twitter / X</span>
+              <span class="text-[10px] text-zinc-650 sm:text-right font-medium">@maxdedev</span>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://tiktok.com/@maxdedev" target="_blank"
+              class="p-3 bg-accentPink border-2 border-black brutalist-shadow-black brutalist-btn-active flex flex-col sm:flex-row sm:items-center justify-between gap-1 font-bold text-white">
+              <span><i class="fab fa-tiktok text-sm mr-2"></i> TikTok</span>
+              <span class="text-[10px] text-zinc-200 sm:text-right font-medium">@maxdedev</span>
+            </a>
+
+            <!-- Threads -->
+            <a href="https://threads.net/@maxdedev" target="_blank"
+              class="p-3 bg-white border-2 border-black brutalist-shadow-black brutalist-btn-active flex flex-col sm:flex-row sm:items-center justify-between gap-1 font-bold">
+              <span><i class="fas fa-at text-sm mr-2"></i> Threads</span>
+              <span class="text-[10px] text-zinc-650 sm:text-right font-medium">@maxdedev</span>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://facebook.com/maxdedev" target="_blank"
+              class="p-3 bg-accentCyan border-2 border-black brutalist-shadow-black brutalist-btn-active flex flex-col sm:flex-row sm:items-center justify-between gap-1 font-bold">
+              <span><i class="fab fa-facebook text-sm mr-2"></i> Facebook</span>
+              <span class="text-[10px] text-zinc-650 sm:text-right font-medium">/maxdedev</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/maxdedev" target="_blank"
+              class="p-3 bg-accentPink border-2 border-black brutalist-shadow-black brutalist-btn-active flex flex-col sm:flex-row sm:items-center justify-between gap-1 font-bold text-white">
+              <span><i class="fab fa-instagram text-sm mr-2"></i> Instagram</span>
+              <span class="text-[10px] text-zinc-200 sm:text-right font-medium">@maxdedev</span>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Direct Node Card -->
+        <div class="bg-white border-3 border-black p-4 sm:p-5 brutalist-card-shadow space-y-3 font-mono text-xs">
+          <h3 class="font-display font-bold text-sm uppercase border-b-2 border-black pb-2 font-sans">Direct Nodes</h3>
+
+          <div class="space-y-2">
+            <div class="border-2 border-black p-3 bg-zinc-50 flex items-center justify-between gap-2">
+              <div class="min-w-0 flex-1">
+                <span class="text-zinc-500 block text-[9px] uppercase">DIRECT E-MAIL</span>
+                <a href="mailto:27design.max@gmail.com"
+                  class="font-bold text-accentPink hover:underline break-all block">27design.max@gmail.com</a>
+              </div>
+              <i class="far fa-envelope text-sm text-accentPink flex-shrink-0"></i>
+            </div>
+
+            <div class="border-2 border-black p-3 bg-zinc-50 flex items-center justify-between gap-2">
+              <div class="min-w-0 flex-1">
+                <span class="text-zinc-500 block text-[9px] uppercase">PHONE &amp; WHATSAPP</span>
+                <a href="https://wa.me/2348167430278"
+                  class="font-bold text-accentGreen hover:underline break-all block">+234 816 7430 278</a>
+              </div>
+              <i class="fab fa-whatsapp text-sm text-accentGreen flex-shrink-0"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <footer class="w-full border-t border-black/10 pt-8 pb-4 text-center text-[10px] font-mono text-zinc-500">
+        © 2026 OMOBAYONLE (MAXDEDEV) // Max Design and Technology. All rights reserved.
+      </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

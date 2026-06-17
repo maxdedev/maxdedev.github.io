@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNX79ZP083"></script>
+
+  <script>
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-JNX79ZP083');
+
+  </script>
+
+  <meta charset="UTF-8">
+  <link rel="icon" href="logo.jpg" type="image/jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibeCore OS // Autonomous AI Software Factory</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accentYellow: 'var(--color-accent-yellow, #fde047)',
+            accentCyan: 'var(--color-accent-cyan, #22d3ee)',
+            accentGreen: 'var(--color-accent-green, #4ade80)',
+            accentPink: 'var(--color-accent-pink, #fb7185)',
+            darkbg: 'var(--color-bg, #faf9f6)',
+            bordercol: 'var(--color-border, #000000)',
+            white: 'var(--color-card-bg, #ffffff)',
+            black: 'var(--color-border, #000000)',
+            zinc: {
+              50: '#f9fafb',
+              100: '#f3f4f6',
+              200: '#e5e7eb',
+              300: '#d1d5db',
+              400: '#9ca3af',
+              500: 'var(--color-text-muted, #6b7280)',
+              600: 'var(--color-text-muted, #4b5563)',
+              650: 'var(--color-text-muted, #4b5563)',
+              700: 'var(--color-text-muted, #374151)',
+              750: 'var(--color-text-muted, #374151)',
+              800: 'var(--color-text-main, #1f2937)',
+              900: 'var(--color-text-main, #111827)',
+              950: '#030712'
+            }
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+            mono: ['Fira Code', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="theme-init.js"></script>
+</head>
+
+<body class="bg-darkbg text-black antialiased">
+
+  <header class="w-full bg-white border-b-4 border-black sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-display font-bold text-lg hover:underline flex items-center gap-2">
+        <i class="fas fa-arrow-left text-sm"></i> BACK TO HOME
+      </a>
+      <span
+        class="font-mono font-bold text-xs uppercase bg-accentPink px-3 py-1 border-2 border-black">VIBECORE_OS</span>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-12">
+
+    <!-- Title Page -->
+    <section class="space-y-4">
+      <h1 class="font-display text-4xl sm:text-5xl font-bold leading-tight uppercase">
+        VibeCore OS // Autonomous AI Software Factory
+      </h1>
+      <p class="text-zinc-650 font-medium text-base leading-relaxed">
+        An automated AI assistant that writes code, runs tests, and fixes programming errors automatically while keeping
+        cloud costs low.
+      </p>
+    </section>
+
+    <!-- Deep-dive details -->
+    <section class="grid md:grid-cols-12 gap-8">
+
+      <!-- Content column (col-span-7) -->
+      <div class="md:col-span-7 space-y-8">
+        <!-- Problem vs Solution Comparison Panel -->
+        <div class="bg-white border-3 border-black brutalist-card-shadow overflow-hidden space-y-0">
+          <div class="grid sm:grid-cols-2 divide-y-3 sm:divide-y-0 sm:divide-x-3 divide-black border-b-3 border-black">
+            <!-- Problem Card -->
+            <div class="p-6 space-y-3 bg-zinc-100">
+              <h3 class="font-display font-extrabold text-lg uppercase text-accentPink flex items-center gap-2">
+                <i class="fas fa-triangle-exclamation"></i> The Problem
+              </h3>
+              <p class="text-zinc-750 text-xs leading-relaxed font-mono">
+                Writing repetitive boilerplate code wastes developer hours, while continuously querying cloud AI tools
+                (like OpenAI or Gemini) balloons API costs rapidly.
+              </p>
+            </div>
+            <!-- Solution Card -->
+            <div class="p-6 space-y-3 bg-white">
+              <h3 class="font-display font-extrabold text-lg uppercase text-accentGreen flex items-center gap-2">
+                <i class="fas fa-circle-check"></i> The Solution
+              </h3>
+              <p class="text-zinc-750 text-xs leading-relaxed font-mono">
+                VibeCore OS coordinates a local-cloud developer loop, executing quick code drafts using free local AI
+                models, and only routing complex refactoring tasks to cloud APIs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white border-3 border-black p-6 brutalist-card-shadow space-y-2">
+          <h2 class="font-display font-bold text-xl uppercase">Local-Cloud Hybrid Architecture</h2>
+          <p class="text-zinc-700 text-sm leading-relaxed">
+            Everyday code writing is handled completely offline. If the system fails a test or hits a logic block, it
+            formats the error and queries cloud AI to generate a correction payload, reducing API billing rates.
+          </p>
+        </div>
+
+        <div class="bg-white border-3 border-black p-6 brutalist-card-shadow space-y-3">
+          <h2 class="font-display font-bold text-xl uppercase">3. Private Testing &amp; Self-Healing</h2>
+          <p class="text-zinc-700 text-sm leading-relaxed">
+            It creates a private workspace to write and test code. It runs checks in this hidden space first. If
+            something fails, the AI automatically corrects the code. The finished code is only saved once all checks
+            pass.
+          </p>
+        </div>
+      </div>
+
+      <!-- Info column (col-span-4) -->
+      <div class="md:col-span-5 space-y-6">
+
+        <div class="bg-accentYellow border-3 border-black p-5 brutalist-card-shadow space-y-3">
+          <h3 class="font-mono font-bold text-xs uppercase tracking-wider">PROJECT METADATA</h3>
+          <div class="grid grid-cols-2 gap-4 text-xs font-mono">
+            <div>
+              <span class="block text-zinc-500 uppercase">STATUS</span>
+              <span class="font-bold">Active Utility</span>
+            </div>
+            <div>
+              <span class="block text-zinc-500 uppercase">TYPE</span>
+              <span class="font-bold">AI CLI Agent</span>
+            </div>
+            <div class="col-span-2">
+              <span class="block text-zinc-500 uppercase">TECH STACK</span>
+              <span class="font-bold block mt-1">Python CLI<br />Ollama Local API<br />Gemini Cloud API<br />Shadow
+                Merging</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- VibeCore CLI Terminal Simulator -->
+        <div class="bg-white border-3 border-black p-5 brutalist-card-shadow space-y-4">
+          <div class="flex items-center justify-between border-b-2 border-black pb-2">
+            <h3 class="font-display font-bold text-sm uppercase">CLI Sandbox Terminal</h3>
+            <span class="w-2.5 h-2.5 bg-accentGreen border-2 border-black rounded-full animate-ping"></span>
+          </div>
+
+          <!-- Console Window -->
+          <div
+            class="bg-zinc-900 text-zinc-200 p-4 border-2 border-black font-mono text-[10px] leading-relaxed h-52 overflow-y-auto"
+            id="terminal-logs">
+            VibeCore OS active. Run "vc.py status" or "vc.py sprint" to begin.
+          </div>
+
+          <!-- Metrics -->
+          <div class="bg-zinc-100 p-3 border-2 border-black font-mono text-[10px] space-y-1">
+            <div class="flex justify-between">
+              <span>Spent Limit:</span>
+              <span id="budget-count" class="font-bold text-accentPink">₦10,000.00</span>
+            </div>
+            <div class="flex justify-between border-b border-black/10 pb-1 mb-1">
+              <span>Budget Caps:</span>
+              <span class="text-zinc-500">₦10,000 Limit</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Local Calls:</span>
+              <span id="local-calls" class="font-bold">42</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Cloud Calls:</span>
+              <span id="cloud-calls" class="font-bold">7</span>
+            </div>
+          </div>
+
+          <div class="flex gap-2">
+            <button id="btn-check-status"
+              class="flex-1 py-1.5 bg-zinc-100 hover:bg-zinc-200 text-black font-mono font-bold text-[10px] border-2 border-black brutalist-shadow-cyan brutalist-btn-active transition-all">
+              status
+            </button>
+            <button id="btn-run-sprint"
+              class="flex-1 py-1.5 bg-black hover:bg-zinc-800 text-white font-mono font-bold text-[10px] border-2 border-black brutalist-shadow-pink brutalist-btn-active transition-all">
+              sprint
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Budget Guard Breakdown -->
+    <section class="bg-white border-3 border-black p-6 brutalist-card-shadow space-y-3">
+      <h3 class="font-display font-bold text-xl uppercase border-b-2 border-black pb-2">The ₦10,000/Month Strategy</h3>
+      <p class="text-zinc-700 text-sm leading-relaxed">
+        The AI tracks its own cost. If cloud API spending exceeds ₦10,000, it automatically turns off cloud tools and
+        switches completely to free, local tools. This protects developers from unexpected bill surprises.
+      </p>
+    </section>
+
+    <!-- VibeCore Script Sandbox Section -->
+    <section class="bg-white border-3 border-black p-6 brutalist-card-shadow space-y-6">
+      <div class="border-b-2 border-black pb-2 flex justify-between items-center">
+        <h3 class="font-display font-bold text-xl uppercase">VibeCore LLM-Cloud Task Sandbox</h3>
+        <span
+          class="px-2 py-0.5 bg-accentPink border border-black font-mono text-[9px] font-bold text-white">INTERACTIVE
+          DEPLOYMENT</span>
+      </div>
+      <p class="text-zinc-650 text-xs font-mono">
+        Write a simple coding goal below (e.g., build a payment router or write tests) and click "Run objective". You
+        will see the local AI draft the code, run checks, and call the cloud AI for help if it gets stuck.
+      </p>
+
+      <div class="grid md:grid-cols-12 gap-8 items-start pt-2">
+        <!-- Input Objective Box -->
+        <div class="md:col-span-5 space-y-4 font-mono text-xs">
+          <div class="space-y-1">
+            <label for="sandbox-objective" class="font-bold text-zinc-500 uppercase text-[10px]">Objective
+              Prompt</label>
+            <textarea id="sandbox-objective" rows="4"
+              class="w-full bg-white border-3 border-black text-xs font-mono font-bold p-3 focus:ring-0"
+              placeholder="e.g. Write a secure transaction router in PHP with a 2-second timeout.">Compile secure transaction router in PHP</textarea>
+          </div>
+
+          <!-- Dropdown for prompt templates -->
+          <div class="space-y-1">
+            <label for="objective-presets" class="font-bold text-zinc-500 uppercase text-[10px]">Preset Prompts</label>
+            <select id="objective-presets"
+              class="w-full bg-white border-3 border-black text-xs font-mono font-bold p-2 focus:ring-0">
+              <option value="PHP-Router" selected>Compile secure transaction router in PHP</option>
+              <option value="SQL-Lock">Build pessimistic lock query for wallet debit</option>
+              <option value="UnitTest">Generate PHPUnit test suite for token billing</option>
+            </select>
+          </div>
+
+          <button id="btn-run-sandbox"
+            class="w-full py-3 bg-accentPink border-3 border-black brutalist-shadow-pink brutalist-btn-active font-mono font-bold text-xs uppercase transition-all flex items-center justify-center gap-2 cursor-pointer text-white">
+            <i class="fas fa-play text-xs"></i> RUN OBJECTIVE
+          </button>
+        </div>
+
+        <!-- CLI Output trace terminal -->
+        <div class="md:col-span-7 space-y-2">
+          <div class="flex items-center justify-between font-mono text-[10px] text-zinc-500 uppercase">
+            <span>Live Agent Trace Monitor</span>
+            <span id="sandbox-run-status" class="text-accentGreen font-bold">AWAITING OBJECTIVE</span>
+          </div>
+          <div
+            class="bg-zinc-950 text-green-400 p-4 border-2 border-black font-mono text-xs rounded h-64 overflow-y-auto leading-relaxed"
+            id="sandbox-terminal-logs">
+            [VibeCore Sandbox v1.2.0 active]<br />
+            Objective input required. Select a template or write a custom goal, then hit RUN.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

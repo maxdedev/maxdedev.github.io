@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNX79ZP083"></script>
+
+  <script>
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-JNX79ZP083');
+
+  </script>
+
+  <meta charset="UTF-8">
+  <link rel="icon" href="logo.jpg" type="image/jpg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Omobayonle Olubiyi | Full-Stack Systems Architect & Engineer</title>
+  <meta name="description"
+    content="Portfolio of Omobayonle Olubiyi, a Full-Stack Systems Architect specializing in microfinance billing engines, split-payment networks, and autonomous local-cloud AI developer scripts.">
+  <meta name="keywords"
+    content="Full Stack Developer, Neo-Brutalism, PHP, Paystack, React Native, AI coding, Nigeria, Omobayonle Olubiyi">
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accentYellow: 'var(--color-accent-yellow, #fde047)',
+            accentCyan: 'var(--color-accent-cyan, #22d3ee)',
+            accentGreen: 'var(--color-accent-green, #4ade80)',
+            accentPink: 'var(--color-accent-pink, #fb7185)',
+            darkbg: 'var(--color-bg, #faf9f6)',
+            bordercol: 'var(--color-border, #000000)',
+            white: 'var(--color-card-bg, #ffffff)',
+            black: 'var(--color-border, #000000)',
+            zinc: {
+              50: '#f9fafb',
+              100: '#f3f4f6',
+              200: '#e5e7eb',
+              300: '#d1d5db',
+              400: '#9ca3af',
+              500: 'var(--color-text-muted, #6b7280)',
+              600: 'var(--color-text-muted, #4b5563)',
+              650: 'var(--color-text-muted, #4b5563)',
+              700: 'var(--color-text-muted, #374151)',
+              750: 'var(--color-text-muted, #374151)',
+              800: 'var(--color-text-main, #1f2937)',
+              900: 'var(--color-text-main, #111827)',
+              950: '#030712'
+            }
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+            mono: ['Fira Code', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="theme-init.js"></script>
+</head>
+
+<body class="bg-darkbg text-black antialiased">
+
+  <!-- Preloader -->
+  <div id="preloader"
+    class="fixed inset-0 bg-darkbg z-50 flex flex-col items-center justify-center font-mono text-xs p-6 select-none border-b-8 border-black">
+    <div class="max-w-md w-full border-3 border-black bg-white brutalist-card-shadow p-6 space-y-4">
+      <div class="flex items-center justify-between border-b-2 border-black pb-2">
+        <span class="font-bold uppercase tracking-tight flex items-center gap-1.5">
+          <i class="fas fa-terminal text-accentPink"></i> SYSTEM INIT LOAD
+        </span>
+        <span class="w-3 h-3 bg-accentPink border-2 border-black rounded-full animate-pulse" id="preloader-led"></span>
+      </div>
+      <div class="space-y-1.5 text-zinc-800 h-28 overflow-y-auto" id="preloader-logs">
+        <div>>>> [SYSTEM] Starting boot pipeline...</div>
+      </div>
+      <div class="w-full bg-zinc-200 border-2 border-black h-4 overflow-hidden relative">
+        <div id="preloader-progress-bar"
+          class="bg-accentYellow h-full border-r-2 border-black transition-all duration-100" style="width: 0%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Minimal Header -->
+  <header class="w-full bg-white border-b-4 border-black sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-display font-bold text-lg tracking-tight hover:underline">
+        OMOBAYONLE // ARCHITECT
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-mono font-bold">
+        <a href="index.html#projects" class="hover:underline">PROJECTS</a>
+        <a href="about.html" class="hover:underline">ABOUT ME</a>
+        <a href="experience.html" class="hover:underline">EXPERIENCE</a>
+        <a href="contact.html" class="hover:underline">CONTACT</a>
+      </nav>
+      <div>
+        <a href="https://wa.me/2348167430278" target="_blank" id="nav-cta-whatsapp"
+          class="px-4 py-2 bg-accentGreen border-3 border-black brutalist-shadow-green brutalist-btn-active text-xs font-mono font-bold transition-all inline-block">
+          WHATSAPP CONNECT
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-16 space-y-20">
+
+    <!-- Hero Section -->
+    <section id="hero" class="fade-in py-8 space-y-6">
+      <div class="inline-block px-3 py-1 bg-accentYellow border-3 border-black text-xs font-mono font-bold uppercase">
+        FULL-STACK SYSTEM PIPELINES
+      </div>
+      <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-none">
+        OMOBAYONLE OLUBIYI.<br />
+        TRANSACTIONAL SYSTEMS.
+      </h1>
+      <div class="min-h-[4rem] flex items-center">
+        <p id="hero-rotating-statement"
+          class="text-lg sm:text-xl text-zinc-700 max-w-2xl font-medium leading-relaxed transition-all duration-500 opacity-0 transform translate-y-2">
+          I build websites and apps that are easy to use, secure, and beautiful.
+        </p>
+      </div>
+
+      <!-- Core Pillars -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4">
+        <div class="p-4 bg-white border-3 border-black brutalist-card-shadow font-mono">
+          <span class="block text-2xl font-bold">₦150M+</span>
+          <span class="text-[10px] text-zinc-500 uppercase font-bold">Payments Handled</span>
+        </div>
+        <div class="p-4 bg-white border-3 border-black brutalist-card-shadow font-mono">
+          <span class="block text-2xl font-bold">Fast</span>
+          <span class="text-[10px] text-zinc-500 uppercase font-bold">Load Times</span>
+        </div>
+        <div class="p-4 bg-white border-3 border-black brutalist-card-shadow font-mono">
+          <span class="block text-2xl font-bold">₦0.00</span>
+          <span class="text-[10px] text-zinc-500 uppercase font-bold">Local AI Cost</span>
+        </div>
+        <div class="p-4 bg-white border-3 border-black brutalist-card-shadow font-mono">
+          <span class="block text-2xl font-bold">5</span>
+          <span class="text-[10px] text-zinc-500 uppercase font-bold">Core Projects</span>
+        </div>
+      </div>
+
+      <!-- Infinite Tech Stack Marquee -->
+      <div class="w-full overflow-hidden border-y-4 border-black bg-white font-mono py-4 select-none relative my-8">
+        <div class="marquee-track flex whitespace-nowrap gap-4">
+          <!-- Slide 1 -->
+          <div class="marquee-content flex gap-4 items-center shrink-0 pr-4">
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">HTML</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">CSS</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">JavaScript</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">PHP</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">MySQL</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">Python</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">Git</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">GitHub</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">RESTful
+              APIs</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">AI</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">Figma</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">Stitch</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">Linux</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">XAMPP</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">WAMP</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">LAMP</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">Ngrok</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">Cloudflare</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">React
+              Native</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">Expo</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">CPanel</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">Photoshop</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">CorelDraw</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">Adobe
+              XD</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">Android</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">Bootstrap</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">Canva</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">Firebase</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">Design
+              Thinking</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">Database
+              Design</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">phpMyAdmin</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">Unit
+              Testing</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">Functional
+              Testing</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">Laravel</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">Playstore
+              Deployment</span>
+          </div>
+          <!-- Duplicate Slide to fill screen and scroll seamlessly -->
+          <div class="marquee-content flex gap-4 items-center shrink-0 pr-4" aria-hidden="true">
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">HTML</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">CSS</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">JavaScript</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">PHP</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">MySQL</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">Python</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">Git</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">GitHub</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">RESTful
+              APIs</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">AI</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">Figma</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">Stitch</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">Linux</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">XAMPP</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">WAMP</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">LAMP</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">Ngrok</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">Cloudflare</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">React
+              Native</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">Expo</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">CPanel</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">Photoshop</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">CorelDraw</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">Adobe
+              XD</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">Android</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">Bootstrap</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">Canva</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">Firebase</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">Design
+              Thinking</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">Database
+              Design</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">phpMyAdmin</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentPink brutalist-card-shadow font-bold text-xs">Unit
+              Testing</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentYellow brutalist-card-shadow font-bold text-xs">Functional
+              Testing</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentCyan brutalist-card-shadow font-bold text-xs">Laravel</span>
+            <span
+              class="marquee-item px-3 py-1.5 border-2 border-black bg-accentGreen brutalist-card-shadow font-bold text-xs">Playstore
+              Deployment</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Node Status & Health Monitor Section -->
+    <section id="live-monitor-section"
+      class="fade-in grid md:grid-cols-12 gap-8 items-center border-t-4 border-black pt-12">
+      <div class="md:col-span-7 space-y-4">
+        <div class="inline-block px-3 py-1 bg-accentPink border-3 border-black text-xs font-mono font-bold uppercase">
+          LIVE INSTANCE TELEMETRY
+        </div>
+        <h2 class="font-display text-3xl font-bold uppercase leading-none">
+          Max's Systems Integration Mesh
+        </h2>
+        <p class="text-zinc-700 font-medium text-sm leading-relaxed max-w-xl">
+          A live dashboard tracking system performance, server speeds, and cloud costs. You can run tests to see how the
+          system handles high traffic.
+        </p>
+      </div>
+
+      <!-- Telemetry Dashboard Card -->
+      <div class="md:col-span-5 bg-white border-4 border-black p-5 brutalist-card-shadow space-y-4 font-mono text-xs">
+        <div class="flex items-center justify-between border-b-2 border-black pb-2">
+          <span class="font-bold uppercase tracking-tight flex items-center gap-1.5">
+            <i class="fas fa-server text-accentCyan"></i> TELEMETRY NODE: ACTIVE
+          </span>
+          <span class="w-3 h-3 bg-accentGreen border-2 border-black rounded-full animate-pulse"
+            id="telemetry-led"></span>
+        </div>
+
+        <!-- Grid of microservices with blinking LEDs -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between border border-black/15 p-2 bg-zinc-50">
+            <span>Deduction Daemon (LenderFlow)</span>
+            <div class="flex items-center gap-2">
+              <span class="text-[10px] text-zinc-500 font-bold" id="lenderflow-status">OK</span>
+              <span class="w-2 h-2 bg-accentGreen border border-black rounded-full" id="lenderflow-led"></span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between border border-black/15 p-2 bg-zinc-50">
+            <span>Billing Splitting (Zeva)</span>
+            <div class="flex items-center gap-2">
+              <span class="text-[10px] text-zinc-500 font-bold" id="zeva-status">OK</span>
+              <span class="w-2 h-2 bg-accentGreen border border-black rounded-full" id="zeva-led"></span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between border border-black/15 p-2 bg-zinc-50">
+            <span>Local Llama Runner (Ollama)</span>
+            <div class="flex items-center gap-2">
+              <span class="text-[10px] text-zinc-500 font-bold" id="ollama-status">IDLE</span>
+              <span class="w-2 h-2 bg-accentCyan border border-black rounded-full" id="ollama-led"></span>
+            </div>
+          </div>
+          <div class="flex items-center justify-between border border-black/15 p-2 bg-zinc-50">
+            <span>Database Connection Pool</span>
+            <div class="flex items-center gap-2">
+              <span class="text-[10px] text-zinc-500 font-bold" id="db-status">99.9%</span>
+              <span class="w-2 h-2 bg-accentGreen border border-black rounded-full" id="db-led"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Latency & Load Indicators -->
+        <div class="grid grid-cols-2 gap-3 pt-2">
+          <div class="border-2 border-black p-3 bg-accentYellow brutalist-card-shadow">
+            <span class="text-[9px] uppercase font-bold text-zinc-650 block">System Latency</span>
+            <span class="text-sm font-extrabold" id="telemetry-latency">14 ms</span>
+          </div>
+          <div class="border-2 border-black p-3 bg-accentCyan brutalist-card-shadow">
+            <span class="text-[9px] uppercase font-bold text-zinc-650 block">Bandwidth Load</span>
+            <span class="text-sm font-extrabold" id="telemetry-load">3.4 MB/s</span>
+          </div>
+        </div>
+
+        <!-- Terminal Output -->
+        <div
+          class="bg-zinc-950 text-green-400 p-3 border-2 border-black font-mono text-[9px] leading-tight h-24 overflow-y-auto"
+          id="telemetry-logs">
+          >>> Telemetry engine initialized.<br />
+          >>> Node security: SECURE.<br />
+          >>> Awaiting system diagnostic inputs.
+        </div>
+
+        <!-- Diagnostic Actions -->
+        <div class="grid grid-cols-2 gap-2 pt-2">
+          <button id="btn-stress-test"
+            class="py-2 bg-accentPink border-2 border-black brutalist-shadow-pink brutalist-btn-active font-mono font-bold text-[10px] uppercase transition-all flex items-center justify-center gap-1.5 cursor-pointer">
+            <i class="fas fa-biohazard"></i> STRESS TEST
+          </button>
+          <button id="btn-reboot-node"
+            class="py-2 bg-accentYellow border-2 border-black brutalist-shadow-yellow brutalist-btn-active font-mono font-bold text-[10px] uppercase transition-all flex items-center justify-center gap-1.5 cursor-pointer">
+            <i class="fas fa-power-off"></i> REBOOT NODE
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects List (Vertical catalog) -->
+    <section id="projects" class="fade-in space-y-8">
+      <div class="border-b-4 border-black pb-4">
+        <h2 class="font-display text-3xl font-bold uppercase">Featured Case Studies</h2>
+        <p class="text-zinc-600 text-sm mt-1 font-mono">SELECT A MODULE TO EXPLORE IN DEPTH</p>
+      </div>
+
+      <div class="space-y-6">
+
+        <!-- Project 1: Zeva -->
+        <div
+          class="bg-white border-3 border-black p-6 brutalist-card-shadow flex flex-col md:flex-row justify-between gap-6 hover:translate-x-1 hover:-translate-y-1 transition-transform">
+          <div class="space-y-3 md:w-3/4">
+            <div class="flex items-center gap-2">
+              <span
+                class="px-2 py-0.5 bg-accentCyan border-2 border-black text-[10px] font-mono font-bold uppercase">PAYSTACK
+                SPLIT ENGINE</span>
+              <span class="text-xs font-mono text-zinc-500">ZEVA.NG</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold">Zeva // Frictionless Event Ticketing</h3>
+            <p class="text-zinc-650 text-sm leading-relaxed max-w-2xl">
+              A simple event ticket website. It splits ticket sales payments automatically, pays event hosts the next
+              day, and lets them scan ticket QR codes with their phones at the door.
+            </p>
+            <div class="flex flex-wrap gap-2 text-[10px] font-mono font-bold text-zinc-500 pt-2">
+              <span>PHP OOP</span>
+              <span>MySQL</span>
+              <span>Paystack Split API</span>
+              <span>Gate scanning</span>
+            </div>
+          </div>
+          <div class="md:w-1/4 flex items-end justify-start md:justify-end">
+            <a href="zeva.html"
+              class="px-5 py-3 bg-accentYellow border-3 border-black brutalist-shadow-yellow brutalist-btn-active font-mono font-bold text-xs uppercase transition-all inline-block">
+              Explore Zeva <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: LenderFlow -->
+        <div
+          class="bg-white border-3 border-black p-6 brutalist-card-shadow flex flex-col md:flex-row justify-between gap-6 hover:translate-x-1 hover:-translate-y-1 transition-transform">
+          <div class="space-y-3 md:w-3/4">
+            <div class="flex items-center gap-2">
+              <span
+                class="px-2 py-0.5 bg-accentGreen border-2 border-black text-[10px] font-mono font-bold uppercase">BACKGROUND
+                REPAYMENTS</span>
+              <span class="text-xs font-mono text-zinc-500">LENDER_FLOW</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold">Lender_Flow // Auto collection daemon</h3>
+            <p class="text-zinc-650 text-sm leading-relaxed max-w-2xl">
+              An automated system for small loans. It handles recurring card payments on schedule, keeping transaction
+              logs and client accounts safe and correct.
+            </p>
+            <div class="flex flex-wrap gap-2 text-[10px] font-mono font-bold text-zinc-500 pt-2">
+              <span>PHP PDO</span>
+              <span>Webhooks handler</span>
+              <span>Cron worker</span>
+              <span>Card tokenization</span>
+            </div>
+          </div>
+          <div class="md:w-1/4 flex items-end justify-start md:justify-end">
+            <a href="lenderflow.html"
+              class="px-5 py-3 bg-accentCyan border-3 border-black brutalist-shadow-cyan brutalist-btn-active font-mono font-bold text-xs uppercase transition-all inline-block">
+              Explore Lender_Flow <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: VibeCore OS -->
+        <div
+          class="bg-white border-3 border-black p-6 brutalist-card-shadow flex flex-col md:flex-row justify-between gap-6 hover:translate-x-1 hover:-translate-y-1 transition-transform">
+          <div class="space-y-3 md:w-3/4">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 bg-accentPink border-2 border-black text-[10px] font-mono font-bold uppercase">AI
+                DEVELOPMENT factory</span>
+              <span class="text-xs font-mono text-zinc-500">VIBECORE OS</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold">VibeCore OS // Autonomous loop builder</h3>
+            <p class="text-zinc-650 text-sm leading-relaxed max-w-2xl">
+              An AI assistant that writes and tests computer code. It uses free local AI tools for simple work and cloud
+              AI for hard tasks, keeping API costs low.
+            </p>
+            <div class="flex flex-wrap gap-2 text-[10px] font-mono font-bold text-zinc-500 pt-2">
+              <span>Python</span>
+              <span>Ollama local API</span>
+              <span>Gemini Cloud API</span>
+              <span>Self-healing loop</span>
+            </div>
+          </div>
+          <div class="md:w-1/4 flex items-end justify-start md:justify-end">
+            <a href="vibecore.html"
+              class="px-5 py-3 bg-accentPink border-3 border-black brutalist-shadow-pink brutalist-btn-active font-mono font-bold text-xs uppercase transition-all inline-block">
+              Explore VibeCore <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: 2Glitz -->
+        <div
+          class="bg-white border-3 border-black p-6 brutalist-card-shadow flex flex-col md:flex-row justify-between gap-6 hover:translate-x-1 hover:-translate-y-1 transition-transform">
+          <div class="space-y-3 md:w-3/4">
+            <div class="flex items-center gap-2">
+              <span
+                class="px-2 py-0.5 bg-accentYellow border-2 border-black text-[10px] font-mono font-bold uppercase">REAL
+                ESTATE MARKETPLACE</span>
+              <span class="text-xs font-mono text-zinc-500">2GLITZ</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold">2Glitz // Subscription property board</h3>
+            <p class="text-zinc-650 text-sm leading-relaxed max-w-2xl">
+              A real estate website that connects home seekers with trusted agents. It automatically adds watermarks to
+              house pictures and protects agent contact details.
+            </p>
+            <div class="flex flex-wrap gap-2 text-[10px] font-mono font-bold text-zinc-500 pt-2">
+              <span>PHP / MySQL</span>
+              <span>Gated Contact Details</span>
+              <span>GD Image processing</span>
+            </div>
+          </div>
+          <div class="md:w-1/4 flex items-end justify-start md:justify-end">
+            <a href="2glitz.html"
+              class="px-5 py-3 bg-accentGreen border-3 border-black brutalist-shadow-green brutalist-btn-active font-mono font-bold text-xs uppercase transition-all inline-block">
+              Explore 2Glitz <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5: OKV -->
+        <div
+          class="bg-white border-3 border-black p-6 brutalist-card-shadow flex flex-col md:flex-row justify-between gap-6 hover:translate-x-1 hover:-translate-y-1 transition-transform">
+          <div class="space-y-3 md:w-3/4">
+            <div class="flex items-center gap-2">
+              <span
+                class="px-2 py-0.5 bg-accentCyan border-2 border-black text-[10px] font-mono font-bold uppercase">CSR
+                BRANDING &amp; LOGISTICS</span>
+              <span class="text-xs font-mono text-zinc-500">OKV</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold">OKV // Osumare KreatiVision CSR Placements</h3>
+            <p class="text-zinc-650 text-sm leading-relaxed max-w-2xl">
+              Branding, event ticket booking, and design work for corporate charity programs.
+            </p>
+            <div class="flex flex-wrap gap-2 text-[10px] font-mono font-bold text-zinc-500 pt-2">
+              <span>Digital RSVP</span>
+              <span>Seating Accreditation</span>
+              <span>Vector layout branding</span>
+            </div>
+          </div>
+          <div class="md:w-1/4 flex items-end justify-start md:justify-end">
+            <a href="okv.html"
+              class="px-5 py-3 bg-accentYellow border-3 border-black brutalist-shadow-yellow brutalist-btn-active font-mono font-bold text-xs uppercase transition-all inline-block">
+              Explore OKV <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Me Teaser -->
+    <section id="about-teaser"
+      class="fade-in bg-accentYellow border-3 border-black p-6 brutalist-card-shadow flex flex-col md:flex-row justify-between items-center gap-6 hover:translate-x-1 hover:-translate-y-1 transition-all">
+      <div class="space-y-2 md:w-3/4">
+        <span class="px-2 py-0.5 bg-white border-2 border-black text-[10px] font-mono font-bold uppercase">THE
+          ARCHITECT</span>
+        <h3 class="font-display text-2xl font-bold">About Omobayonle Olubiyi</h3>
+        <p class="text-zinc-800 text-sm leading-relaxed max-w-2xl font-medium">
+          I am a self-taught developer and designer. As the Lead Developer at SmartTeller, I build and maintain payment
+          apps, teach tech classes for kids in Abeokuta, and design clean visual brands.
+        </p>
+      </div>
+      <div class="md:w-1/4 flex justify-start md:justify-end w-full">
+        <a href="about.html"
+          class="px-5 py-3 bg-white hover:bg-zinc-100 text-white border-3 border-black brutalist-shadow-black brutalist-btn-active font-mono font-bold text-xs uppercase transition-all inline-block w-full text-center md:w-auto">
+          Read Full Profile <i class="fas fa-arrow-right ml-1"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Core Expertise -->
+    <section id="expertise" class="fade-in space-y-8">
+      <div class="border-b-4 border-black pb-4">
+        <h2 class="font-display text-3xl font-bold uppercase">System Capabilities</h2>
+        <p class="text-zinc-600 text-sm mt-1 font-mono">ENGINEERING PROFILE MATRIX</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Box 1 -->
+        <div class="bg-white border-3 border-black p-6 brutalist-card-shadow space-y-3">
+          <div class="w-10 h-10 bg-accentCyan border-3 border-black flex items-center justify-center font-bold">01</div>
+          <h3 class="font-display font-bold text-lg">Backend Deduction Architectures</h3>
+          <p class="text-zinc-650 text-xs leading-relaxed">
+            Constructing PDO SQL transaction pipelines, background collections daemons, cron automated workers, and
+            secure API routers in PHP.
+          </p>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="bg-white border-3 border-black p-6 brutalist-card-shadow space-y-3">
+          <div class="w-10 h-10 bg-accentGreen border-3 border-black flex items-center justify-center font-bold">02
+          </div>
+          <h3 class="font-display font-bold text-lg">FinTech &amp; Webhook Integration</h3>
+          <p class="text-zinc-650 text-xs leading-relaxed">
+            Linking cards via verification frames, storing token data asynchronously on webhook interrupts, and
+            executing dynamic split settlements.
+          </p>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="bg-white border-3 border-black p-6 brutalist-card-shadow space-y-3">
+          <div class="w-10 h-10 bg-accentPink border-3 border-black flex items-center justify-center font-bold">03</div>
+          <h3 class="font-display font-bold text-lg">Local-Cloud AI Automation</h3>
+          <p class="text-zinc-650 text-xs leading-relaxed">
+            Integrating Ollama local interfaces for code writing with cloud APIs (Gemini) for planning, managed via
+            token spending budget guards.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Deep-dive Experience Redirect -->
+      <div class="pt-6 text-center">
+        <a href="experience.html"
+          class="px-6 py-3 bg-accentGreen border-3 border-black brutalist-shadow-green brutalist-btn-active font-mono font-bold text-xs uppercase transition-all inline-block hover:translate-x-1 hover:-translate-y-1">
+          Explore Professional Experience Timeline <i class="fas fa-arrow-right ml-1"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Connect Terminal Teaser Redirect -->
+    <section id="contact"
+      class="fade-in max-w-xl mx-auto bg-white border-4 border-black p-6 sm:p-8 brutalist-card-shadow space-y-4 text-center">
+      <span class="px-2 py-0.5 bg-accentYellow border-2 border-black text-[10px] font-mono font-bold uppercase">CONNECT
+        NODE</span>
+      <h2 class="font-display text-2xl font-bold uppercase">Start a Project</h2>
+      <p class="text-zinc-650 text-xs font-mono leading-relaxed">
+        Ready to build? Construct a structured JSON API lead payload or connect directly across the social mesh.
+      </p>
+      <div class="pt-2">
+        <a href="contact.html"
+          class="px-6 py-3 bg-accentCyan border-3 border-black brutalist-shadow-cyan brutalist-btn-active font-mono font-bold text-xs uppercase transition-all inline-block hover:translate-x-1 hover:-translate-y-1 w-full sm:w-auto">
+          Open Integration Terminal <i class="fas fa-arrow-right ml-1"></i>
+        </a>
+      </div>
+
+      <div class="text-center text-[10px] font-mono text-zinc-500 pt-4 border-t border-black/10">
+        © 2026 OMOBAYONLE (MAXDEDEV) // Max Design and Technology. All rights reserved.
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, { threshold: 0.1 });
+      fadeElements.forEach(el => observer.observe(el));
+    });
+  </script>
+  <script src="app.js"></script>
+</body>
+
+</html>

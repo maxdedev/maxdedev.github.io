@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNX79ZP083"></script>
+
+  <script>
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-JNX79ZP083');
+
+  </script>
+
+  <meta charset="UTF-8">
+  <link rel="icon" href="logo.jpg" type="image/jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeva // Frictionless Event Ticketing Engine</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accentYellow: 'var(--color-accent-yellow, #fde047)',
+            accentCyan: 'var(--color-accent-cyan, #22d3ee)',
+            accentGreen: 'var(--color-accent-green, #4ade80)',
+            accentPink: 'var(--color-accent-pink, #fb7185)',
+            darkbg: 'var(--color-bg, #faf9f6)',
+            bordercol: 'var(--color-border, #000000)',
+            white: 'var(--color-card-bg, #ffffff)',
+            black: 'var(--color-border, #000000)',
+            zinc: {
+              50: '#f9fafb',
+              100: '#f3f4f6',
+              200: '#e5e7eb',
+              300: '#d1d5db',
+              400: '#9ca3af',
+              500: 'var(--color-text-muted, #6b7280)',
+              600: 'var(--color-text-muted, #4b5563)',
+              650: 'var(--color-text-muted, #4b5563)',
+              700: 'var(--color-text-muted, #374151)',
+              750: 'var(--color-text-muted, #374151)',
+              800: 'var(--color-text-main, #1f2937)',
+              900: 'var(--color-text-main, #111827)',
+              950: '#030712'
+            }
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+            mono: ['Fira Code', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="theme-init.js"></script>
+</head>
+
+<body class="bg-darkbg text-black antialiased">
+
+  <header class="w-full bg-white border-b-4 border-black sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-display font-bold text-lg hover:underline flex items-center gap-2">
+        <i class="fas fa-arrow-left text-sm"></i> BACK TO HOME
+      </a>
+      <span class="font-mono font-bold text-xs uppercase bg-accentCyan px-3 py-1 border-2 border-black">ZEVA_NG</span>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-12">
+
+    <!-- Title Page -->
+    <section class="space-y-4">
+      <h1 class="font-display text-4xl sm:text-5xl font-bold leading-tight uppercase">
+        Zeva.ng // Frictionless Event Ticketing Engine
+      </h1>
+      <p class="text-zinc-650 font-medium text-base leading-relaxed">
+        A fast ticketing system. It splits payments automatically, pays organizers the next day, and lets them scan QR
+        codes to check in guests at the door.
+      </p>
+    </section>
+
+    <!-- Deep-dive details -->
+    <section class="grid md:grid-cols-12 gap-8">
+
+      <!-- Content column (col-span-8) -->
+      <div class="md:col-span-7 space-y-8">
+        <!-- Problem vs Solution Comparison Panel -->
+        <div class="bg-white border-3 border-black brutalist-card-shadow overflow-hidden space-y-0">
+          <div class="grid sm:grid-cols-2 divide-y-3 sm:divide-y-0 sm:divide-x-3 divide-black border-b-3 border-black">
+            <!-- Problem Card -->
+            <div class="p-6 space-y-3 bg-zinc-100">
+              <h3 class="font-display font-extrabold text-lg uppercase text-accentPink flex items-center gap-2">
+                <i class="fas fa-triangle-exclamation"></i> The Problem
+              </h3>
+              <p class="text-zinc-750 text-xs leading-relaxed font-mono">
+                Most ticketing websites force customers to create accounts, fill out long forms, and wait days for
+                payouts. Organizers face complex setups and delayed access to ticket sales money.
+              </p>
+            </div>
+            <!-- Solution Card -->
+            <div class="p-6 space-y-3 bg-white">
+              <h3 class="font-display font-extrabold text-lg uppercase text-accentGreen flex items-center gap-2">
+                <i class="fas fa-circle-check"></i> The Solution
+              </h3>
+              <p class="text-zinc-750 text-xs leading-relaxed font-mono">
+                Zeva provides a 10-second checkout needing only a name and email. Ticket sales split automatically at
+                purchase, routing money directly to organizers next-day with capped fees.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white border-3 border-black p-6 brutalist-card-shadow space-y-2">
+          <h2 class="font-display font-bold text-xl uppercase">Workflow &amp; Split Calculations</h2>
+          <p class="text-zinc-700 text-sm leading-relaxed">
+            Instead of paying event organizers manually, the system calculates and splits ticket money at checkout. The
+            host's share is routed directly to their bank account next-day, and platform commissions transfer
+            automatically, keeping payments simple and safe.
+          </p>
+        </div>
+
+        <div class="bg-white border-3 border-black p-6 brutalist-card-shadow space-y-3">
+          <h2 class="font-display font-bold text-xl uppercase">3. Unique Key Points</h2>
+          <ul class="list-disc list-inside text-zinc-700 text-sm space-y-2 leading-relaxed">
+            <li>Capped Platform Fees: platform commission is capped at ₦5,000 maximum per ticket on luxury passes,
+              offering massive savings for high-ticket events.</li>
+            <li>No Escrow Risks: platform never holds client funds over weekends; settlements happen directly next-day.
+            </li>
+            <li>Setup Fee: Free events pay a flat ₦5,000 setup fee to filter out spammers.</li>
+            <li>Accreditation: Automated gate checking with QR-code scanning via smartphone camera.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Info column (col-span-4) -->
+      <div class="md:col-span-5 space-y-6">
+
+        <div class="bg-accentYellow border-3 border-black p-5 brutalist-card-shadow space-y-3">
+          <h3 class="font-mono font-bold text-xs uppercase tracking-wider">PROJECT METADATA</h3>
+          <div class="grid grid-cols-2 gap-4 text-xs font-mono">
+            <div>
+              <span class="block text-zinc-500 uppercase">STATUS</span>
+              <span class="font-bold">Production</span>
+            </div>
+            <div>
+              <span class="block text-zinc-500 uppercase">TYPE</span>
+              <span class="font-bold">Web Utility</span>
+            </div>
+            <div class="col-span-2">
+              <span class="block text-zinc-500 uppercase">TECH STACK</span>
+              <span class="font-bold block mt-1">PHP (OOP/MVC)<br />MySQL<br />Paystack API<br />Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Split Calculator Widget -->
+        <div class="bg-white border-3 border-black p-5 brutalist-card-shadow space-y-4">
+          <h3 class="font-display font-bold text-sm uppercase border-b-2 border-black pb-2">Split Payout Calculator</h3>
+          <div class="space-y-3">
+            <div class="space-y-1">
+              <label for="ticket-tier" class="text-xs text-zinc-500 font-mono">Select Category</label>
+              <select id="ticket-tier"
+                class="w-full bg-white border-3 border-black text-xs font-mono font-bold p-2 focus:ring-0">
+                <option value="regular" selected>Regular Ticket (₦2,500)</option>
+                <option value="vip">VIP Ticket (₦20,000)</option>
+                <option value="custom">Custom Luxury Ticket</option>
+              </select>
+            </div>
+
+            <div id="custom-price-group" class="space-y-1 hidden">
+              <label for="ticket-price" class="text-xs text-zinc-500 font-mono">Ticket Price (₦)</label>
+              <input type="number" id="ticket-price" value="180000"
+                class="w-full bg-white border-3 border-black text-xs font-mono font-bold p-2 focus:ring-0">
+            </div>
+
+            <div class="bg-zinc-100 p-4 border-2 border-black text-xs font-mono space-y-1.5">
+              <div class="flex justify-between">
+                <span>Total Charge:</span>
+                <span id="display-total-pay" class="font-bold">₦2,500</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Zeva Split Fee:</span>
+                <span id="display-zeva-fee" class="text-accentPink font-bold">₦175.00</span>
+              </div>
+              <div class="flex justify-between border-b-2 border-black/10 pb-1.5 mb-1.5">
+                <span>Formula Applied:</span>
+                <span id="display-zeva-formula">(3% + ₦100)</span>
+              </div>
+              <div class="flex justify-between font-bold">
+                <span>Payout to Org:</span>
+                <span id="display-organizer-payout" class="text-accentGreen">₦2,325.00</span>
+              </div>
+            </div>
+
+            <button id="btn-generate-ticket"
+              class="w-full py-2 bg-black hover:bg-zinc-800 text-white font-mono font-bold text-xs border-2 border-black brutalist-shadow-yellow brutalist-btn-active transition-all">
+              GENERATE LIVE TICKET
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Paystack Split API Payload Output -->
+    <section class="bg-white border-3 border-black p-5 brutalist-card-shadow space-y-3 fade-in">
+      <h3 class="font-mono font-bold text-xs uppercase tracking-wider text-zinc-500">Live API Split Payload</h3>
+      <div id="display-playstack-payload"
+        class="bg-zinc-950 text-green-400 p-4 border-2 border-black font-mono text-xs overflow-x-auto rounded">
+        <pre id="display-paystack-split">Awaiting transaction split initialization...</pre>
+      </div>
+    </section>
+
+    <!-- Ticket QR Output -->
+    <section id="generated-ticket-area"
+      class="max-w-md mx-auto bg-white border-4 border-black p-6 brutalist-card-shadow hidden relative overflow-hidden">
+      <div class="flex items-center justify-between border-b-3 border-black pb-3 mb-4">
+        <div class="font-display font-bold text-base">ZEVA TICKET CONFIRMATION</div>
+        <span class="text-[9px] font-mono bg-accentCyan px-2 py-0.5 border-2 border-black uppercase font-bold">Verified
+          Split</span>
+      </div>
+      <div class="flex flex-col items-center py-4 space-y-4">
+        <div class="bg-zinc-100 p-3 border-3 border-black">
+          <img id="ticket-qr-code" src="" alt="Ticket QR code" class="w-36 h-36">
+        </div>
+        <div class="text-center font-mono text-xs space-y-1">
+          <div><span class="text-zinc-500">TIER:</span> <span id="ticket-detail-name" class="font-bold">Regular
+              Ticket</span></div>
+          <div><span class="text-zinc-500">CHARGE:</span> <span id="ticket-detail-price"
+              class="font-bold text-accentGreen">₦2,500</span></div>
+        </div>
+      </div>
+      <div class="border-t-2 border-dashed border-black pt-4 mt-2 text-center text-[10px] font-mono text-zinc-500">
+        SCAN AT GATE VIA ACCREDITATION CAMERA // ACTIVE STATUS
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

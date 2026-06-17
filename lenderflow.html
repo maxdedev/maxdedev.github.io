@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNX79ZP083"></script>
+
+  <script>
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-JNX79ZP083');
+
+  </script>
+
+  <meta charset="UTF-8">
+  <link rel="icon" href="logo.jpg" type="image/jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lender_Flow // Auto Collection Billing Daemon</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accentYellow: 'var(--color-accent-yellow, #fde047)',
+            accentCyan: 'var(--color-accent-cyan, #22d3ee)',
+            accentGreen: 'var(--color-accent-green, #4ade80)',
+            accentPink: 'var(--color-accent-pink, #fb7185)',
+            darkbg: 'var(--color-bg, #faf9f6)',
+            bordercol: 'var(--color-border, #000000)',
+            white: 'var(--color-card-bg, #ffffff)',
+            black: 'var(--color-border, #000000)',
+            zinc: {
+              50: '#f9fafb',
+              100: '#f3f4f6',
+              200: '#e5e7eb',
+              300: '#d1d5db',
+              400: '#9ca3af',
+              500: 'var(--color-text-muted, #6b7280)',
+              600: 'var(--color-text-muted, #4b5563)',
+              650: 'var(--color-text-muted, #4b5563)',
+              700: 'var(--color-text-muted, #374151)',
+              750: 'var(--color-text-muted, #374151)',
+              800: 'var(--color-text-main, #1f2937)',
+              900: 'var(--color-text-main, #111827)',
+              950: '#030712'
+            }
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+            mono: ['Fira Code', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="theme-init.js"></script>
+</head>
+
+<body class="bg-darkbg text-black antialiased">
+
+  <header class="w-full bg-white border-b-4 border-black sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-display font-bold text-lg hover:underline flex items-center gap-2">
+        <i class="fas fa-arrow-left text-sm"></i> BACK TO HOME
+      </a>
+      <span
+        class="font-mono font-bold text-xs uppercase bg-accentGreen px-3 py-1 border-2 border-black">LENDER_FLOW</span>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-12">
+
+    <!-- Title Page -->
+    <section class="space-y-4">
+      <h1 class="font-display text-4xl sm:text-5xl font-bold leading-tight uppercase">
+        Lender_Flow // Auto Collection Billing Daemon
+      </h1>
+      <p class="text-zinc-650 font-medium text-base leading-relaxed">
+        An automated tool for collecting loan payments. It securely schedules card payments in the background and keeps
+        database records safe.
+      </p>
+    </section>
+
+    <!-- Deep-dive details -->
+    <section class="grid md:grid-cols-12 gap-8">
+
+      <!-- Content column (col-span-7) -->
+      <div class="md:col-span-7 space-y-8">
+        <!-- Problem vs Solution Comparison Panel -->
+        <div class="bg-white border-3 border-black brutalist-card-shadow overflow-hidden space-y-0">
+          <div class="grid sm:grid-cols-2 divide-y-3 sm:divide-y-0 sm:divide-x-3 divide-black border-b-3 border-black">
+            <!-- Problem Card -->
+            <div class="p-6 space-y-3 bg-zinc-100">
+              <h3 class="font-display font-extrabold text-lg uppercase text-accentPink flex items-center gap-2">
+                <i class="fas fa-triangle-exclamation"></i> The Problem
+              </h3>
+              <p class="text-zinc-750 text-xs leading-relaxed font-mono">
+                Micro-finance businesses suffer from high loan default rates because manual payment collection relies on
+                user memory, resulting in delayed returns and lost capital.
+              </p>
+            </div>
+            <!-- Solution Card -->
+            <div class="p-6 space-y-3 bg-white">
+              <h3 class="font-display font-extrabold text-lg uppercase text-accentGreen flex items-center gap-2">
+                <i class="fas fa-circle-check"></i> The Solution
+              </h3>
+              <p class="text-zinc-750 text-xs leading-relaxed font-mono">
+                LenderFlow automates collections by linking borrower cards at registration. It executes scheduled
+                payments in the background with automatic network recovery.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white border-3 border-black p-6 brutalist-card-shadow space-y-2">
+          <h2 class="font-display font-bold text-xl uppercase">Decoupled Collection &amp; Webhooks</h2>
+          <p class="text-zinc-700 text-sm leading-relaxed">
+            Linking cards is kept separate from actual billing routines. Even if the user closes their browser or the
+            network drops during a transaction, the background scheduler retries and captures the callback response
+            securely.
+          </p>
+        </div>
+
+        <div class="bg-white border-3 border-black p-6 brutalist-card-shadow space-y-3">
+          <h2 class="font-display font-bold text-xl uppercase">3. Security &amp; Database Transactions</h2>
+          <p class="text-zinc-700 text-sm leading-relaxed">
+            Built to keep financial data completely safe. A client's balance is only updated after a successful payment
+            receipt is verified and saved. If the internet drops mid-payment, the transaction cancels safely, preventing
+            incorrect account balances.
+          </p>
+        </div>
+      </div>
+
+      <!-- Info column (col-span-4) -->
+      <div class="md:col-span-5 space-y-6">
+
+        <div class="bg-accentCyan border-3 border-black p-5 brutalist-card-shadow space-y-3">
+          <h3 class="font-mono font-bold text-xs uppercase tracking-wider">PROJECT METADATA</h3>
+          <div class="grid grid-cols-2 gap-4 text-xs font-mono">
+            <div>
+              <span class="block text-zinc-500 uppercase">STATUS</span>
+              <span class="font-bold">Production</span>
+            </div>
+            <div>
+              <span class="block text-zinc-500 uppercase">TYPE</span>
+              <span class="font-bold">Billing Engine</span>
+            </div>
+            <div class="col-span-2">
+              <span class="block text-zinc-500 uppercase">TECH STACK</span>
+              <span class="font-bold block mt-1">PHP (PDO OOP)<br />MySQL Schema<br />Paystack Webhooks<br />Cron /
+                Shell</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LenderFlow Live Ledger Simulator -->
+        <div class="bg-white border-3 border-black p-5 brutalist-card-shadow space-y-4">
+          <h3 class="font-display font-bold text-sm uppercase border-b-2 border-black pb-2">Billing Cron Simulator</h3>
+
+          <!-- Ledger List -->
+          <div class="bg-zinc-100 p-4 border-2 border-black min-h-[160px] flex flex-col justify-end gap-2"
+            id="lenderflow-ticker">
+            <!-- Populated via Javascript -->
+          </div>
+
+          <div class="space-y-3">
+            <div class="text-[10px] text-zinc-500 font-mono leading-relaxed uppercase border-t-2 border-black/10 pt-3">
+              Trigger Card Link component to capture token
+            </div>
+            <button id="btn-bind-card"
+              class="w-full py-2 bg-black hover:bg-zinc-800 text-white font-mono font-bold text-xs border-2 border-black brutalist-shadow-cyan brutalist-btn-active transition-all">
+              SIMULATE LINK CARD
+            </button>
+            <div id="card-binding-logs" class="space-y-1 font-mono text-[10px] text-zinc-600">
+              <!-- Logs print here -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Detailed Deduction Rules -->
+    <section class="bg-white border-3 border-black p-6 brutalist-card-shadow space-y-4">
+      <h3 class="font-display font-bold text-xl uppercase border-b-2 border-black pb-2">Automated Billing Algorithm</h3>
+      <div class="grid md:grid-cols-3 gap-6 text-sm">
+        <div>
+          <span class="block font-mono font-bold text-accentPink text-base">A. Standard deduction</span>
+          <p class="text-zinc-600 text-xs mt-1 leading-relaxed">
+            Payments are calculated automatically based on a set percentage rate of the remaining balance.
+          </p>
+        </div>
+        <div>
+          <span class="block font-mono font-bold text-accentCyan text-base">B. Balance Capping</span>
+          <p class="text-zinc-600 text-xs mt-1 leading-relaxed">
+            If the user's balance is lower than the calculated payment, the system adjusts the charge to collect only
+            what is left.
+          </p>
+        </div>
+        <div>
+          <span class="block font-mono font-bold text-accentGreen text-base">C. Status Clearing</span>
+          <p class="text-zinc-600 text-xs mt-1 leading-relaxed">
+            As soon as the balance is fully paid, the system marks the account as cleared and stops future charges.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Split-Payment Playground Section -->
+    <section class="bg-white border-3 border-black p-6 brutalist-card-shadow space-y-6">
+      <div class="border-b-2 border-black pb-2 flex justify-between items-center">
+        <h3 class="font-display font-bold text-xl uppercase">Split Payment & Settlement Sandbox</h3>
+        <span class="px-2 py-0.5 bg-accentGreen border border-black font-mono text-[9px] font-bold">INTERACTIVE
+          DEPLOYMENT</span>
+      </div>
+      <p class="text-zinc-650 text-xs font-mono">
+        Adjust the transaction volume (₦) to test the payment system. The graph shows Paystack fees, platform cuts, and
+        merchant payouts in real-time.
+      </p>
+
+      <div class="grid md:grid-cols-12 gap-8 items-center pt-2">
+        <!-- Control Slider -->
+        <div class="md:col-span-5 space-y-4 font-mono text-xs">
+          <div class="space-y-1">
+            <label for="split-volume" class="font-bold text-zinc-500 uppercase text-[10px] flex justify-between">
+              <span>Transaction Amount</span>
+              <span id="slider-volume-val" class="text-black font-extrabold">₦50,000</span>
+            </label>
+            <input type="range" id="split-volume" min="1000" max="500000" step="1000" value="50000"
+              class="w-full accent-black cursor-pointer">
+          </div>
+
+          <div class="border-2 border-black p-3 bg-zinc-50 space-y-2 text-[10px]">
+            <div class="flex justify-between">
+              <span>Paystack Core Fee (1.5% + ₦100):</span>
+              <span id="playground-gateway-fee" class="font-bold text-accentPink">-₦850.00</span>
+            </div>
+            <div class="flex justify-between">
+              <span>LenderFlow Platform Split (2.0%):</span>
+              <span id="playground-platform-fee" class="font-bold text-accentCyan">₦1,000.00</span>
+            </div>
+            <div class="flex justify-between border-t border-black/10 pt-2 font-bold text-black text-xs">
+              <span>Merchant Settlement Payout:</span>
+              <span id="playground-merchant-payout" class="text-accentGreen">₦48,150.00</span>
+            </div>
+          </div>
+
+          <div class="bg-zinc-900 text-green-400 p-3 border-2 border-black rounded text-[9px] font-mono leading-tight">
+            API Split Response Latency: <span id="playground-latency" class="font-bold text-white">45ms</span><br />
+            Deduction Status: <span class="font-bold text-accentGreen">SUCCESS (CAPTURED)</span>
+          </div>
+        </div>
+
+        <!-- SVG Split Graph -->
+        <div
+          class="md:col-span-7 border-2 border-black bg-zinc-950 p-4 h-64 flex items-center justify-center relative rounded overflow-hidden">
+          <svg id="split-svg" viewBox="0 0 500 240" class="w-full h-full text-white">
+            <!-- Background grid lines -->
+            <line x1="20" y1="120" x2="480" y2="120" stroke="#222" stroke-width="1" stroke-dasharray="4" />
+            <line x1="120" y1="20" x2="120" y2="220" stroke="#222" stroke-width="1" stroke-dasharray="4" />
+            <line x1="380" y1="20" x2="380" y2="220" stroke="#222" stroke-width="1" stroke-dasharray="4" />
+
+            <!-- Flows (animated paths) -->
+            <!-- Input to Split -->
+            <path d="M 76 120 L 184 120" stroke="#fde047" stroke-width="3" fill="none" stroke-dasharray="6"
+              id="flow-in" />
+
+            <!-- Split to Merchant -->
+            <path d="M 216 112 Q 280 60 344 60" stroke="#4ade80" stroke-width="3" fill="none" stroke-dasharray="6"
+              id="flow-merchant" />
+
+            <!-- Split to Platform -->
+            <path d="M 216 128 Q 280 180 344 180" stroke="#fb7185" stroke-width="3" fill="none" stroke-dasharray="6"
+              id="flow-platform" />
+
+            <!-- Nodes (circles) -->
+            <!-- Input Node -->
+            <circle cx="60" cy="120" r="16" fill="#fde047" stroke="#000" stroke-width="2" />
+            <text x="60" y="123" font-family="monospace" font-size="8" fill="#000" font-weight="bold"
+              text-anchor="middle">TX</text>
+
+            <!-- Gateway Split Node -->
+            <circle cx="200" cy="120" r="16" fill="#22d3ee" stroke="#000" stroke-width="2" />
+            <text x="200" y="123" font-family="monospace" font-size="8" fill="#000" font-weight="bold"
+              text-anchor="middle">SPLIT</text>
+
+            <!-- Output Node: Merchant Payout -->
+            <circle cx="360" cy="60" r="16" fill="#4ade80" stroke="#000" stroke-width="2" />
+            <text x="360" y="63" font-family="monospace" font-size="8" fill="#000" font-weight="bold"
+              text-anchor="middle">MERCH</text>
+
+            <!-- Output Node: Platform Fee -->
+            <circle cx="360" cy="180" r="16" fill="#fb7185" stroke="#000" stroke-width="2" />
+            <text x="360" y="183" font-family="monospace" font-size="8" fill="#000" font-weight="bold"
+              text-anchor="middle">PLAT</text>
+
+            <!-- Node Labels -->
+            <text x="60" y="95" font-family="monospace" font-size="7" fill="#888" text-anchor="middle">Incoming
+              Tx</text>
+            <text x="200" y="95" font-family="monospace" font-size="7" fill="#888" text-anchor="middle">API
+              router</text>
+            <text x="410" y="63" font-family="monospace" font-size="7" fill="#4ade80" font-weight="bold"
+              id="svg-merch-label">₦48,150</text>
+            <text x="410" y="183" font-family="monospace" font-size="7" fill="#fb7185" font-weight="bold"
+              id="svg-plat-label">₦1,000</text>
+          </svg>
+
+          <style>
+            @keyframes dash {
+              to {
+                stroke-dashoffset: -20;
+              }
+            }
+
+            #flow-in,
+            #flow-merchant,
+            #flow-platform {
+              animation: dash 1s linear infinite;
+            }
+          </style>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
